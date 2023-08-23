@@ -23,6 +23,6 @@ app.use((err, req, res, next) => {
 });
 
 
-app.listen(64135, () => {
+app.listen(process.env.PORT, () => {
     console.log('server up and running gangity');
 })

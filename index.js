@@ -10,7 +10,7 @@ var cors = require('cors');
 app.use(cors());
 
 app.post('/api/start', async (req, res) => {
-  hook.send("Yo gang " + req.headers['x-forwarded-for'] || req.socket.remoteAddress + " hit up aamogh notes with a request")
+  hook.send("New connection formed with Notes page, ip is " + req.headers['x-forwarded-for'] || req.socket.remoteAddress)
 })
 
 
